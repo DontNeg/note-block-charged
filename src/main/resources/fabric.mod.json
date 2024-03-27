@@ -8,8 +8,9 @@
 		"DontNeg"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/DontNeg/note-block-charged"
+		"homepage": "https://github.com/DontNeg/note-block-charged",
+		"sources": "https://github.com/DontNeg/note-block-charged",
+		"issues": "https://github.com/DontNeg/note-block-charged/issues"
 	},
 	"license": "GNU GPLv3",
 	"icon": "assets/noteblockcharged/icon/icon.png",
