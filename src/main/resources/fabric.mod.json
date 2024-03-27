@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "noteblockcharged",
+	"version": "${version}",
+	"name": "Note Block Charged",
+	"description": "Electric Guitar Note Blocks",
+	"authors": [
+		"DontNeg"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "GNU GPLv3",
+	"icon": "assets/noteblockcharged/icon/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"dontneg.noteblockcharged.NoteBlockCharged"
+		],
+		"client": [
+			"dontneg.noteblockcharged.NoteBlockChargedClient"
+		]
+	},
+	"mixins": [
+		"noteblockcharged.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.7",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

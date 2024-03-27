@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "charged=false": {
+      "model": "noteblockcharged:block/charged_note_block"
+    },
+    "charged=true": {
+      "model": "noteblockcharged:block/charged_note_block_powered"
+    }
+  }
+}
