@@ -18,7 +18,6 @@ public class NoteBlocks {
             new ChargedNoteBlock(FabricBlockSettings.copyOf(Blocks.NOTE_BLOCK)
                     .luminance(state -> state.get(ChargedNoteBlock.CHARGED) ? 7 : 0)));
 
-
     @SuppressWarnings("SameParameterValue")
     private static Block registerBlock(String key, Block block){
         registerBlockItem(key, block);
