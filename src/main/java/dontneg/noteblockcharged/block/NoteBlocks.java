@@ -4,6 +4,7 @@ import dontneg.noteblockcharged.NoteBlockCharged;
 import dontneg.noteblockcharged.block.cnoteblock.ChargedNoteBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItem;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
+import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.BlockItem;
@@ -15,7 +16,7 @@ import net.minecraft.util.Identifier;
 
 public class NoteBlocks {
     public static final Block CHARGED_NOTE_BLOCK = registerBlock("charged_note_block",
-            new ChargedNoteBlock(FabricBlockSettings.copyOf(Blocks.NOTE_BLOCK)
+            new ChargedNoteBlock(AbstractBlock.Settings.copy(Blocks.NOTE_BLOCK)
                     .luminance(state -> state.get(ChargedNoteBlock.CHARGED) ? 7 : 0)));
 
 
