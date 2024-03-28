@@ -2,8 +2,6 @@ package dontneg.noteblockcharged.block;
 
 import dontneg.noteblockcharged.NoteBlockCharged;
 import dontneg.noteblockcharged.block.cnoteblock.ChargedNoteBlock;
-import net.fabricmc.fabric.api.item.v1.FabricItem;
-import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;

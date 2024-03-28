@@ -18,6 +18,7 @@
     "PPP"
   ],
   "result": {
-    "item": "noteblockcharged:charged_note_block"
+    "count": 1,
+    "id": "noteblockcharged:charged_note_block"
   }
 }
