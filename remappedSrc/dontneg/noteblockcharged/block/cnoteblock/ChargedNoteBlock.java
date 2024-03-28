@@ -26,10 +26,10 @@ public class ChargedNoteBlock extends NoteBlock {
     }
 
     @Override
-    protected ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, BlockHitResult hit) {
+    public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
         float[] pitches = NoteSounds.getPitches();
         if(!world.getBlockState(pos).get(CHARGED)){
-            super.onUse(state, world, pos, player, hit);
+            super.onUse(state,world,pos,player,hand,hit);
             return ActionResult.SUCCESS;
         }
         state = state.cycle(NOTE);
