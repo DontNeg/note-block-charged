@@ -11,7 +11,6 @@ import net.minecraft.sound.SoundCategory;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.util.ActionResult;
-import net.minecraft.util.Hand;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
@@ -26,10 +25,10 @@ public class ChargedNoteBlock extends NoteBlock {
     }
 
     @Override
-    public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
+    public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, BlockHitResult hit) {
         float[] pitches = NoteSounds.getPitches();
         if(!world.getBlockState(pos).get(CHARGED)){
-            super.onUse(state,world,pos,player,hand,hit);
+            super.onUse(state,world,pos,player,hit);
             return ActionResult.SUCCESS;
         }
         state = state.cycle(NOTE);
